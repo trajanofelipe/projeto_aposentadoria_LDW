@@ -3,20 +3,28 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Simulador de Aposentadoria</title>
-<script src="js/jquery.js"></script>
-<script src="js/funcoesDAO"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/funcoesDAO.js"></script>
+
 </head>
 <body>
 
 <h1>Entre com os dados solicitados</h1>
 	<section>
-		Sua idade<input class="n1" type="number"><br>
+	<div>
+		Sexo 
+		 <select name="sexo" size="1">
+    		<option value="Fem"> Feminino </option>
+   			 <option value="Masc"> Masculino </option>
+   			 </select><br>
+		Sua idade			<input class="n1" type="number"><br>
 		Seu tempo de serviço<input class="n2" type="number"><br>
-		<button onclick="resultado()">Calcular</button><br>
 		<p class="resultado"></p>
-		
+		<button onclick="clicar()">Calcular</button><br>
+		</div>
 	</section>
-
+	
+	
  
 </body>
 </html>
