@@ -1,12 +1,20 @@
+	/*quando tem erro na imagem carregada/quebrada - evento jquery*/
+$(function(){
+	$('img').on("error",function(){
+		$('img').attr("src","img/error.jpg");
+		
+	});
+});
 
-	/*quando tem erro na imagem carregada/quebrada*/
+
+
+	/*quando tem erro na imagem carregada/quebrada - evento html*/
 		
 	function imgError(image) {
 	    image.onerror = "";
 	    image.src = "img/error.jpg";
 	    return true;
 	};
-	
 	
 	function clicar(){
 		
@@ -74,5 +82,3 @@
 	return;
 	};
 	
-	
-
