@@ -1,33 +1,22 @@
 
-	
-
-
-
-
 	/*quando tem erro na imagem carregada/quebrada*/
-			
-	
-	$('img').on("error", function(){
 		
-		$('img').attr('src','img/error.jpg');
-	});
-	
 	function imgError(image) {
 	    image.onerror = "";
 	    image.src = "img/error.jpg";
 	    return true;
-	}
+	};
 	
-/*
-	$(function(){ clicar(){
+	
+	function clicar(){
 		
 		var num1 = document.querySelector(".n1").value;
 		var num2 = document.querySelector(".n2").value;
 	
 		var resultado = parseInt(num1)+parseInt(num2);
 	
-		document.querySelector(".resultado").innerHtml = resultado;
-		
+
+	
 		if(num1 <1 || num2< 0){
 			
 			document.write("Pelo menos um dos valores está vazio ou é menor do que zero");
@@ -84,5 +73,6 @@
 	
 	return;
 	};
-	})
-*/
+	
+	
+
